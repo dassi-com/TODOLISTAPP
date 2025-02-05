@@ -1,0 +1,116 @@
+* {
+  font-family: "Outfit", sans-serif;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Teko", sans-serif;
+}
+
+.title {
+  background-color: rgb(228, 228, 228);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title h1 {
+  color: #dd2121;
+}
+.title h1 span {
+  color: red;
+}
+
+.grid {
+  background-color: lightgray;
+}
+.grid .personal-and-professional {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10px;
+}
+@media (max-width: 600px) {
+  .grid .personal-and-professional {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+}
+.grid .personal-and-professional .personal, .grid .personal-and-professional .professional {
+  border-bottom: 2px solid lightgray;
+}
+.grid .personal-and-professional .personal .personal, .grid .personal-and-professional .personal .professional:hover, .grid .personal-and-professional .professional .personal, .grid .personal-and-professional .professional .professional:hover {
+  border-bottom: 2px solid orangered;
+}
+.grid .btn-grid {
+  background-color: transparent;
+  border: none;
+  color: #464545;
+  width: 100%;
+}
+
+.showcase .hidden {
+  display: none;
+}
+.showcase .input-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.showcase .input-content input {
+  background-color: #fcf6f6;
+  border: none;
+  padding: 10px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  outline: none;
+  width: 100%;
+}
+.showcase .input-content button {
+  background-color: skyblue;
+  border: none;
+  padding: 10px;
+  width: 120px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: white;
+  transition: all 0.5s;
+}
+.showcase .input-content button:hover {
+  background-color: #9393fc;
+}
+.showcase .content {
+  background: #fafafa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.showcase .delete {
+  color: #dd2121;
+  background-color: transparent;
+  border: none;
+  position: relative;
+  left: 120px;
+}
+.showcase .display-section {
+  border-bottom: 1px solid rgb(241, 146, 112);
+  cursor: pointer;
+  padding-bottom: 15px;
+}
+.showcase .btn-section {
+  float: right;
+}
+.showcase .edit-btn {
+  background-color: skyblue;
+  border: none;
+  border-radius: 5px;
+  margin-right: 5px;
+  width: 40px;
+  padding: 5px;
+}
+
+.hidden {
+  display: none;
+}/*# sourceMappingURL=home.css.map */
